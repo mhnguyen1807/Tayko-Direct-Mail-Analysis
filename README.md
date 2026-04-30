@@ -87,11 +87,27 @@ Below is the confusion matrix generated from the final model:
 
 ---
 
+## 📜 Source Code & Files
+
+- **SAS Model Code:**  
+  [tayko_purchase_prediction.sas](codes/tayko_purchase_prediction.sas)
+
+- **Dataset:**  
+  [tayko.csv](data/tayko.csv)
+
+- **Confusion Matrix Output:**  
+  [confusion_matrix.png](outputs/confusion_matrix.png)
+
+- **Project Report (PDF):**  
+  [project_report.pdf](docs/project_report.pdf)
+
+---
+
 ## 👤 Author  
 **Minh Nguyen**  
 Bachelor of Science in Management Information Systems (MIS)  
 Cybersecurity Analytics & Management Concentration  
-Oakland University – Class of 2026   
+Oakland University – Class of 2026  
 
 [LinkedIn](https://www.linkedin.com/in/minh-nguyen-mis/) · [GitHub](https://github.com/mhnguyen1807)
 
@@ -99,3 +115,4 @@ Oakland University – Class of 2026
 
 ## 📄 License  
 This project is licensed under the **MIT License**.
+
