@@ -56,7 +56,11 @@ Tayko Direct Mail Analysis/
 ## 📊 Model Output (Confusion Matrix)  
 Below is the confusion matrix generated from the final model:
 
-![Confusion Matrix](outputs/confusion_matrix.png)
+  ### Logistic Regression
+  ![Logistic Regression Confusion Matrix](outputs/confusion_matrix_logistic_regression.png)
+
+  ### Neural Network
+  ![Neural Network Confusion Matrix](outputs/confusion_matrix_neural_network.png)
 
 ---
 
@@ -93,13 +97,19 @@ Below is the confusion matrix generated from the final model:
   [tayko_purchase_prediction.sas](codes/tayko_purchase_prediction.sas)
 
 - **Dataset:**  
-  [tayko.csv](data/tayko.csv)
+  [tayko.csv](data/TaykoSoftware.csv)
 
 - **Confusion Matrix Output:**  
-  [confusion_matrix.png](outputs/confusion_matrix.png)
+  ## 📊 Model Outputs (Confusion Matrices)
 
-- **Project Report (PDF):**  
-  [project_report.pdf](docs/project_report.pdf)
+  ### Logistic Regression
+  ![Logistic Regression Confusion Matrix](outputs/confusion_matrix_logistic_regression.png)
+
+  ### Neural Network
+  ![Neural Network Confusion Matrix](outputs/confusion_matrix_neural_network.png)
+
+- **Project Report (DOCX):**  
+  [HW4_DirectMailing_Report.docx](docs/HW4_DirectMailing_Report.docx)
 
 ---
 
