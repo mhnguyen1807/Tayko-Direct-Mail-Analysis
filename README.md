@@ -1,111 +1,160 @@
 # Tayko Direct Mail Analysis  
-Predicting customer purchase behavior using Logistic Regression and Neural Network models in SAS.
+### Predictive Modeling for Customer Targeting & Marketing ROI Optimization  
 
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![SAS](https://img.shields.io/badge/Tools-SAS-blue)
-![Status](https://img.shields.io/badge/Status-Completed-success)
-![Last Updated](https://img.shields.io/badge/Updated-April%202026-lightgrey)
-
----
-
-## 📌 Executive Summary  
-This project analyzes customer purchase behavior for Tayko Software’s direct mail campaign.  
-Using SAS, I built and compared **Logistic Regression** and **Neural Network** models to predict whether a customer will purchase after receiving a catalog. The goal is to help the company **optimize marketing spend** by targeting customers with the highest likelihood of conversion.
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)  
+![Tools](https://img.shields.io/badge/Tools-SAS%20Viya-blue)  
+![Model](https://img.shields.io/badge/Models-Logistic%20Regression%20%7C%20Neural%20Network-orange)  
+![Updated](https://img.shields.io/badge/Updated-April%202026-lightgrey)
 
 ---
 
-## ⭐ Project Highlights  
-- Built a **binary classification model** to predict catalog purchase behavior  
-- Compared **Logistic Regression** vs. **Neural Network** performance  
-- Conducted **data cleaning, feature engineering, and exploratory analysis**  
-- Evaluated models using **confusion matrix, accuracy, sensitivity, specificity**  
-- Delivered insights to support **data‑driven marketing decisions**  
-- Organized project using a clean, professional GitHub structure  
+## 📌 Table of Contents
+1. [Business Problem](#-1-business-problem)  
+2. [Data Overview](#-2-data-overview)  
+3. [Modeling Approach](#-3-modeling-approach)  
+4. [Key Insights](#-4-key-insights)  
+5. [Business Impact](#-5-business-impact)  
+6. [Tools & Techniques](#-6-tools--techniques)  
+7. [Repository Structure](#-7-repository-structure)  
+8. [Model Performance Comparison](#-8-model-performance-comparison)  
+9. [Key Takeaway](#-9-key-takeaway)  
+10. [Source Code & Files](#-10-source-code--files)  
+11. [Author](#-11-author)  
+12. [License](#-12-license)
 
 ---
 
-## 🧠 Models Used  
-- **Logistic Regression**  
-- **Neural Network (MLP)**  
-- **Train/Test split evaluation**  
-- **Threshold tuning for classification**  
+## 📌 1. Business Problem
+Tayko Software relies heavily on direct mail catalogs to drive customer purchases. However, mailing catalogs is expensive, and many customers never respond.
+The company wants to answer a critical question:
+
+### **“Which customers are most likely to purchase if we mail them a catalog?”**
+
+By predicting purchase likelihood, Tayko can:
+
+- Reduce wasted marketing spend  
+- Target high‑value customers  
+- Improve conversion rates  
+- Increase overall campaign ROI  
+
+This project builds predictive models to support Tayko’s customer targeting strategy.
 
 ---
 
-## 📂 Repository Structure  
-```
-Tayko Direct Mail Analysis/
-│
-├── codes/
-│   └── tayko_purchase_prediction.sas
-│
-├── data/
-│   └── tayko.csv
-│
-├── docs/
-│   └── project_report.pdf
-│
-├── outputs/
-│   └── confusion_matrix.png
-│
-└── README.md
-```
+## 📊 2. Data Overview
+The dataset includes customer demographics, purchase behavior, and engagement history.
+
+**Target Variable:**  
+- `Purchase` — whether the customer made a purchase after receiving a catalog
+
+**Key Predictors:**  
+- `Freq` — purchase frequency  
+- `last_update` — recency  
+- `Web` — web activity  
+- `Gender`  
+- `Address_RES`, `Address_US`  
+
+The `id` variable was removed during preprocessing.
 
 ---
 
-## 📊 Model Output (Confusion Matrix)  
-Below is the confusion matrix generated from the final model:
+## 🧠 3. Modeling Approach
+Two predictive models were developed and evaluated using SAS Viya:
 
-  ### Logistic Regression
-  ![Logistic Regression Confusion Matrix](outputs/confusion_matrix_logistic_regression.png)
+### **Logistic Regression**
+- **Accuracy:** 75.62%  
+- **Sensitivity:** 78.69%  
+- **Specificity:** 72.56%  
+- **Precision:** 74.05%
 
-  ### Neural Network
-  ![Neural Network Confusion Matrix](outputs/confusion_matrix_neural_network.png)
-
----
-
-## 🛠️ Tools & Technologies  
-- **SAS Enterprise Miner / SAS Studio**  
-- **Statistical Modeling**  
-- **Data Cleaning & Preparation**  
-- **Predictive Analytics**  
-- **GitHub for version control**  
+### **Neural Network**
+- **Accuracy:** 75.37%  
+- **Sensitivity:** 75.18%  
+- **Specificity:** 75.56%  
+- **Precision:** 75.37%
 
 ---
 
-## 🚀 How to Run This Project  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/mhnguyen1807/Tayko-Direct-Mail-Analysis
-   ```
-2. Open the `.sas` file in SAS Studio or SAS Enterprise Miner  
-3. Import the dataset (`tayko.csv`)  
-4. Run the code to reproduce the models and outputs  
+## 🔍 4. Key Insights
+- Both models perform similarly in overall accuracy (~75%).  
+- For Tayko’s business goal, **precision is the most important metric**.  
+- The **Neural Network** model has slightly higher precision, meaning it better identifies customers who will actually purchase.  
+- This leads to more efficient catalog targeting and higher ROI.
 
 ---
 
-## 📈 Key Insights  
-- Neural Network slightly outperformed Logistic Regression  
-- Certain customer attributes strongly influenced purchase likelihood  
-- Model results can help Tayko Software **reduce marketing costs** by targeting high‑probability buyers  
+## 💼 5. Business Impact
+Tayko only wants to mail catalogs to customers predicted to purchase.  
+Precision tells us **how many of those predictions are correct**.
+
+If Tayko mails **100 catalogs** to predicted purchasers:
+
+- **Logistic Regression:** ~74 customers will buy  
+- **Neural Network:** ~75 customers will buy  
+
+### 📈 Why this matters  
+A **1% improvement in precision** may seem small, but at scale it becomes significant:
+
+- For **100,000 mailed catalogs**, a 1% lift = **1,000 additional purchases**  
+- This translates to **tens of thousands of dollars in extra revenue**  
+- Without increasing marketing cost  
+- While reducing waste from sending catalogs to low‑probability customers  
+
+### 💡 Business Interpretation  
+The Neural Network model helps Tayko:
+
+- Spend less on ineffective mailings  
+- Increase conversions from the same marketing budget  
+- Improve customer targeting strategy  
+- Boost profitability of future catalog campaigns  
 
 ---
 
-## 📜 Source Code & Files
+## 🛠️ 6. Tools & Techniques
+- **SAS Viya**  
+- Data cleaning & preprocessing  
+- Logistic Regression modeling  
+- Neural Network modeling  
+- Confusion Matrix evaluation  
+- Business interpretation & ROI framing  
+
+---
+
+## 📁 7. Repository Structure
+📁 codes/        → SAS scripts for data prep and modeling
+📁 data/         → TaykoSoftware.csv (source data)
+📁 docs/         → HW4_DirectMailing_Report.docx
+📁 outputs/      → Model results and confusion matrices
+📄 README.md     → Project summary and insights
+
+
+---
+
+## 📊 8. Model Performance Comparison
+![Model Comparison](outputs/model_comparison_chart.png)
+
+---
+
+## ✅ 9. Key Takeaway
+Predictive analytics enables Tayko Software to **target the right customers**, reduce wasted marketing spend, and improve catalog profitability.  
+The Neural Network model offers the best precision and is recommended for deployment.
+
+---
+
+## 📜 10. Source Code & Files
 
 - **SAS Model Code:**  
   [tayko_purchase_prediction.sas](codes/tayko_purchase_prediction.sas)
 
 - **Dataset:**  
-  [tayko.csv](data/TaykoSoftware.csv)
+  [TaykoSoftware.csv](data/TaykoSoftware.csv)
 
-- **Confusion Matrix Output:**  
-  ## 📊 Model Outputs (Confusion Matrices)
+- **Model Outputs (Confusion Matrices):**
 
-  ### Logistic Regression
+  ### Logistic Regression  
   ![Logistic Regression Confusion Matrix](outputs/confusion_matrix_logistic_regression.png)
 
-  ### Neural Network
+  ### Neural Network  
   ![Neural Network Confusion Matrix](outputs/confusion_matrix_neural_network.png)
 
 - **Project Report (DOCX):**  
@@ -113,7 +162,7 @@ Below is the confusion matrix generated from the final model:
 
 ---
 
-## 👤 Author  
+## 👤 11. Author  
 **Minh Nguyen**  
 Bachelor of Science in Management Information Systems (MIS)  
 Cybersecurity Analytics & Management Concentration  
@@ -123,6 +172,5 @@ Oakland University – Class of 2026
 
 ---
 
-## 📄 License  
+## 📄 12. License  
 This project is licensed under the **MIT License**.
-
