@@ -122,4 +122,4 @@ This project was completed as **Homework 4** for **MIS 4560 – Introduction to 
 **Minh Nguyen**  
 MIS Senior | Cybersecurity Analytics & Management Concentration  
 Oakland University — Expected Graduation: May 2026  
-[LinkedIn](#) · [GitHub](#)
+[LinkedIn](https://www.linkedin.com/in/minh-nguyen-mis/) · [GitHub](https://github.com/mhnguyen1807)
