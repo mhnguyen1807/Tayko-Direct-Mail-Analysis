@@ -1,5 +1,5 @@
 # Tayko Direct Mail Analysis  
-### Predictive Modeling for Customer Targeting & Marketing ROI Optimization  
+### Reducing Wasted Catalog Spend Through Predictive Purchase Modeling 
 
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)  
 ![Tools](https://img.shields.io/badge/Tools-SAS%20Viya-blue)  
@@ -17,15 +17,14 @@
 6. [Tools & Techniques](#-6-tools--techniques)  
 7. [Repository Structure](#-7-repository-structure)  
 8. [Model Performance Comparison](#-8-model-performance-comparison)  
-9. [Source Code & Files](#-10-source-code--files)  
-10. [Author](#-11-author)  
-11. [License](#-12-license)
+9. [Source Code & Files](#-9-source-code--files)  
+10. [Author](#-10-author)  
+11. [License](#-11-license)
 
 ---
 
 ## 📌 1. Business Problem
 Tayko Software relies heavily on direct mail catalogs to drive customer purchases. However, mailing catalogs is expensive, and many customers never respond.
-The company wants to answer a critical question:
 
 ### **“Which customers are most likely to purchase if we mail them a catalog?”**
 
@@ -77,7 +76,7 @@ Two predictive models were developed and evaluated using SAS Viya:
 ## 🔍 4. Key Insights
 - Both models perform similarly in overall accuracy (~75%).  
 - For Tayko’s business goal, **precision is the most important metric**.  
-- The **Neural Network** model has slightly higher precision, meaning it better identifies customers who will actually purchase.  
+- The Neural Network model achieved higher precision (75.37% vs. 74.05%), making it the stronger choice for minimizing wasted catalog spend.
 - This leads to more efficient catalog targeting and higher ROI.
 
 ---
@@ -110,6 +109,7 @@ The Neural Network model helps Tayko:
 ---
 
 ## 🛠️ 6. Tools & Techniques
+Built end-to-end in SAS Viya — from raw data cleaning through model evaluation and business interpretation — to support a real direct mail targeting decision.
 - **SAS Viya**  
 - Data cleaning & preprocessing  
 - Logistic Regression modeling  
@@ -125,7 +125,7 @@ The Neural Network model helps Tayko:
 ---
 
 ## ✅ 8. Key Takeaway
-Predictive analytics enables Tayko Software to **target the right customers**, reduce wasted marketing spend, and improve catalog profitability.  
+This analysis identified a model that can reduce ineffective catalog mailings while improving purchase conversions — without increasing spend.  
 The Neural Network model offers the best precision and is recommended for deployment.
 
 ---
