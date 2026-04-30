@@ -17,10 +17,9 @@
 6. [Tools & Techniques](#-6-tools--techniques)  
 7. [Repository Structure](#-7-repository-structure)  
 8. [Model Performance Comparison](#-8-model-performance-comparison)  
-9. [Key Takeaway](#-9-key-takeaway)  
-10. [Source Code & Files](#-10-source-code--files)  
-11. [Author](#-11-author)  
-12. [License](#-12-license)
+9. [Source Code & Files](#-10-source-code--files)  
+10. [Author](#-11-author)  
+11. [License](#-12-license)
 
 ---
 
@@ -120,28 +119,18 @@ The Neural Network model helps Tayko:
 
 ---
 
-## 📁 7. Repository Structure
-📁 codes/        → SAS scripts for data prep and modeling
-📁 data/         → TaykoSoftware.csv (source data)
-📁 docs/         → HW4_DirectMailing_Report.docx
-📁 outputs/      → Model results and confusion matrices
-📄 README.md     → Project summary and insights
-
-
----
-
-## 📊 8. Model Performance Comparison
+## 📊 7. Model Performance Comparison
 ![Model Comparison](outputs/model_comparison_chart.png)
 
 ---
 
-## ✅ 9. Key Takeaway
+## ✅ 8. Key Takeaway
 Predictive analytics enables Tayko Software to **target the right customers**, reduce wasted marketing spend, and improve catalog profitability.  
 The Neural Network model offers the best precision and is recommended for deployment.
 
 ---
 
-## 📜 10. Source Code & Files
+## 📜 9. Source Code & Files
 
 - **SAS Model Code:**  
   [tayko_purchase_prediction.sas](codes/tayko_purchase_prediction.sas)
@@ -162,7 +151,7 @@ The Neural Network model offers the best precision and is recommended for deploy
 
 ---
 
-## 👤 11. Author  
+## 👤 10. Author  
 **Minh Nguyen**  
 Bachelor of Science in Management Information Systems (MIS)  
 Cybersecurity Analytics & Management Concentration  
@@ -172,5 +161,5 @@ Oakland University – Class of 2026
 
 ---
 
-## 📄 12. License  
+## 📄 11. License  
 This project is licensed under the **MIT License**.
